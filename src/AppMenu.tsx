@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {BrowserRouter as Router, Link, Switch, Route, Redirect, RouteComponentProps} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Switch, Route, Redirect} from 'react-router-dom';
 import Register from './Register';
 import Dashboard from './Dashboard';
 import Home from './Home';
