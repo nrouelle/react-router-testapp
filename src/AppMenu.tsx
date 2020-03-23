@@ -12,8 +12,8 @@ class AppMenu extends React.Component {
                 <ul>
                   <li><Link to="/">Accueil</Link></li>
                   <li><Link to="/register">Register</Link></li>
-                  
                   <li><Link to="/Nadege">Nadege</Link></li>
+                  <NadComp />
               </ul>
               <Switch>
                 <Route exact path="/">
@@ -25,9 +25,6 @@ class AppMenu extends React.Component {
                 <Route path="/login">
                   <Login />
                 </Route>
-                <NadComp>
-                  <Dashboard />
-                </NadComp>
               </Switch>
             </Router>
         
