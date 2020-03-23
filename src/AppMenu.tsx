@@ -12,7 +12,6 @@ class AppMenu extends React.Component {
                 <ul>
                   <li><Link to="/">Accueil</Link></li>
                   <li><Link to="/register">Register</Link></li>
-                  <li><Link to="/Nadege">Nadege</Link></li>
                   <NadComp />
               </ul>
               <Switch>
@@ -24,6 +23,9 @@ class AppMenu extends React.Component {
                 </Route>
                 <Route path="/login">
                   <Login />
+                </Route>
+                <Route path="/dashboard">
+                  <Dashboard />
                 </Route>
               </Switch>
             </Router>
@@ -39,7 +41,7 @@ const fakeAuth = {
   }
 };
 
-class AdminLink extends React.Component<{}> {
+class DashboardLinkMenu extends React.Component<{}> {
   render() {
     return (
       <li><Link to="/dashboard">Dashboard</Link></li>
@@ -50,7 +52,7 @@ class AdminLink extends React.Component<{}> {
 class NadComp extends React.Component<{}> {
    render() {
     return (
-      fakeAuth.isAuthenticated ? (<AdminLink />) : 
+      fakeAuth.isAuthenticated ? (<DashboardLinkMenu />) : 
       (
         <Redirect
           to={{
