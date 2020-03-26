@@ -1,3 +1,7 @@
+# React Router Test App
+
+This project allows me to test routing in React and how to protect routes.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
